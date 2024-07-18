@@ -11,7 +11,8 @@
     "test:unit": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "deploy": "vite build && gh-pages -d dist"
+    "create-cname": "echo tomaskri.com > dist/CNAME",
+    "deploy": "vite build && npm run create-cname && gh-pages -d dist"
   },
   "dependencies": {
     "oh-vue-icons": "^1.0.0-rc3",
