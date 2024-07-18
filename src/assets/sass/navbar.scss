@@ -1,0 +1,17 @@
+.navbar {
+  navbar-item {
+    img {
+      --bulma-navbar-item-img-max-height: 90px;
+    }
+  }
+
+  .navbar-menu {
+    .navbar-item {
+      &:last-child {
+        @include mixins.desktop {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use 'bulma/sass' with (
+  $family-primary: '"Nunito", sans-serif',
+  $primary: #111827,
+  $link: #111827,
+  $column-gap: 1rem,
+  $control-radius: 12px
+);
+
+@use 'bulma/sass/utilities/mixins';
+
+@use 'bulma/sass/grid/columns-v2';
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+@import 'colors';
+@import 'buttons';
+@import 'navbar';
+@import 'forms';
+@import 'sections';
+@import 'typography';
+@import 'slider';

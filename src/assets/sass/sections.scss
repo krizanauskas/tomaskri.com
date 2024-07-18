@@ -1,0 +1,67 @@
+.contacts {
+  padding-top: 50px;
+
+  @include mixins.tablet {
+    padding-top: 100px;
+  }
+
+  .contacts__info {
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.hero {
+  @include mixins.tablet {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .hero__profile {
+    margin-bottom: 30px;
+
+    @include mixins.tablet {
+      margin-bottom: 0;
+    }
+
+    .hero__img-wrap {
+      display: inline-block;
+      position: relative;
+
+      img {
+        border: 5px solid $white;
+      }
+
+      .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $light-grey;
+        left: 30px;
+        top: 30px;
+        border-radius: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  .hero__description {
+    margin-left: 30px;
+
+    @include mixins.tablet {
+      margin-left: 0;
+    }
+  }
+}
+
+.about {
+  background-color: $very-light-grey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include mixins.tablet {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

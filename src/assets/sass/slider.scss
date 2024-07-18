@@ -1,0 +1,30 @@
+:root {
+  --swiper-navigation-color: #{$black};
+  --swiper-pagination-color: #{$black};
+}
+
+.slider__wrapper {
+  position: relative;
+
+  .swiper {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+  }
+
+  .swiper-slide {
+    margin-bottom: 30px;
+
+    .slide__content {
+      @include mixins.tablet {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
