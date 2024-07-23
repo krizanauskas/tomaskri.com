@@ -24,19 +24,19 @@
       <div class="navbar-end has-text-centered">
         <router-link class="navbar-item" :to="{ name: 'home' }">About me</router-link>
 
-        <router-link class="navbar-item" :to="{ name: 'home' }">Portfolio</router-link>
+        <router-link class="navbar-item" :to="{ name: 'portfolio' }">Portfolio</router-link>
 
-        <router-link class="navbar-item" :to="{ name: 'home' }">Services</router-link>
+        <router-link class="navbar-item" :to="{ name: 'services' }">Services</router-link>
 
-        <router-link class="navbar-item" :to="{ name: 'home' }">Tools</router-link>
+        <router-link class="navbar-item disabled" :to="{ name: 'home' }">Tools</router-link>
 
-        <router-link class="navbar-item" :to="{ name: 'home' }">Resources</router-link>
+        <router-link class="navbar-item disabled" :to="{ name: 'home' }">Resources</router-link>
 
-        <router-link class="navbar-item" :to="{ name: 'home' }">Blog</router-link>
+        <router-link class="navbar-item disabled" :to="{ name: 'home' }">Blog</router-link>
 
         <div class="navbar-item">
           <div class="buttons">
-            <router-link class="button is-primary m-auto" :to="{ name: 'home' }"
+            <router-link class="button is-primary m-auto" :to="{ name: 'home', hash: '#contacts' }"
               >Let's work together</router-link
             >
           </div>

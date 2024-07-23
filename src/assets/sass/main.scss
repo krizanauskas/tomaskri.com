@@ -3,7 +3,9 @@
   $primary: #111827,
   $link: #111827,
   $column-gap: 1rem,
-  $control-radius: 12px
+  $control-radius: 12px,
+  $light: #e5e7eb,
+  $navbar-item-img-max-height: 100px
 );
 
 @use 'bulma/sass/utilities/mixins';
@@ -19,3 +21,4 @@
 @import 'sections';
 @import 'typography';
 @import 'slider';
+@import 'helpers';

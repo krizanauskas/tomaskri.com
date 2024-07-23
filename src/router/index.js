@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import PortfolioView from '../views/PortfolioView.vue'
+import ServicesView from '../views/ServicesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,12 +14,12 @@ const router = createRouter({
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: HomeView
+      component: PortfolioView
     },
     {
       path: '/services',
       name: 'services',
-      component: HomeView
+      component: ServicesView
     },
     {
       path: '/tools',
@@ -34,7 +36,15 @@ const router = createRouter({
       name: 'blog',
       component: HomeView
     }
-  ]
+  ],
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
+    }
+  }
 })
 
 export default router

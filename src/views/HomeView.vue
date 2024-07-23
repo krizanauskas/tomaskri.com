@@ -12,17 +12,21 @@
         </div>
         <div class="column hero__description">
           <div>
-            <h1 class="is-size-2 is-size-4-mobile">
+            <h1 class="is-size-2 is-size-4-mobile mb-4">
               Hi, I am <b>Tomas</b> - freelance backend engineer, nice to meet you 👋
             </h1>
             <h2 class="is-size-5 is-size-6-mobile">
-              As a seasoned freelance web developer with over seven years of professional
-              experience, I bring a rich technical background and a diverse skill set to every
-              project
+              With over seven years of professional experience, I bring a rich technical background
+              and a diverse skill set to every project
             </h2>
             <div class="mb-5 my-5">
-              <p class="is-size-5">Remote :)</p>
-              <p class="is-size-5">Available for new projects</p>
+              <p class="is-size-5">
+                <v-icon scale="1" name="co-location-pin" color="green" /> Lithuania, Vilnius; Remote
+                :)
+              </p>
+              <p class="is-size-5">
+                <v-icon scale="1" name="co-check" color="green" /> Available for new projects
+              </p>
             </div>
 
             <div>
@@ -43,21 +47,37 @@
     <span class="tag is-light mb-6 is-medium">About me</span>
 
     <div class="slider__wrapper">
-      <swiper-container class="swiper" navigation="true" pagination="true" loop="true">
+      <swiper-container
+        class="swiper"
+        :navigation="true"
+        pagination="true"
+        loop="true"
+        :breakpoints="{
+          '1': {
+            navigation: {
+              enabled: false
+            }
+          },
+          '768': {
+            navigation: {
+              enabled: true
+            }
+          }
+        }"
+      >
         <swiper-slide class="swiper-slide">
           <div class="slide__content">
             <div class="has-text-left is-size-5">
               <p>
-                As a seasoned freelance web developer with over seven years of professional
-                experience, I bring a rich technical background and a diverse skill set to every
-                project
+                As a web developer with over seven years of professional experience, I bring a rich
+                technical background and a diverse skill set to every project
               </p>
               <p>
                 I am eager to join a team as a part time or full time contractor, focused on
-                complex, high-performance distributed systems. I thrive on tackling new and
-                challenging tasks that produce meaningful results, and I find motivation in seeing
-                the tangible impact of my work. Additionally, I am passionate about mentoring
-                younger professionals and sharing my knowledge to help them grow.
+                complex, high-performance distributed systems. I enjoy taking on new and challenging
+                tasks that produce meaningful results, and I find motivation in seeing the visible
+                impact of my work. Additionally, I am passionate about sharing my knowledge to help
+                younger professionals grow.
               </p>
               <p>
                 My professional strengths include a proactive work style, strong problem-solving
@@ -72,15 +92,16 @@
             <div class="has-text-left is-size-5">
               <p>
                 My career began with building custom websites and CMS systems using Laravel and PHP,
-                providing tailored solutions for various clients.
+                providing customized solutions for various clients.
               </p>
               <p>
                 I then joined a call center startup, where I expanded my expertise with technologies
-                such as AWS, Redis, WebRTC, and WebSockets.
+                such as AWS, Redis, WebRTC, and WebSockets, you can check more about it in
+                "portfolio" page.
               </p>
               <p>
                 In this role, I contributed to the development of a multichannel call center
-                software, centralizing chat, email, and call communications with advanced analytics
+                software, centralizing chat, email, and call communications with custom analytics
                 and agent management tools.
               </p>
             </div>
@@ -92,7 +113,7 @@
               <p>
                 After gaining substantial experience, I transitioned to freelancing, tackling
                 diverse projects including developing a website builder SaaS for the real estate
-                industry, utilizing advanced technologies to deliver robust solutions.
+                industry, which was eventually purchased by an investor.
               </p>
               <p>
                 My next significant role was with SumUp, a small merchant bank, where I focused on
@@ -100,14 +121,12 @@
                 database architecture to enhance throughput.
               </p>
               <p>
-                This is where I began focusing on Go, amassing nearly three years of experience.
+                During this time, I focused primarily on GOLANG, accumulating a lot of experience.
               </p>
             </div>
           </div>
         </swiper-slide>
       </swiper-container>
-      <div class="swiper-button-prev is-hidden-mobile"></div>
-      <div class="swiper-button-next is-hidden-mobile"></div>
     </div>
   </section>
 
@@ -135,11 +154,11 @@
         </div>
         <p class="is-size-6 mb-3">or</p>
 
-        <a class="button is-primary mb-3"> Schedule a call </a>
+        <a class="button is-primary mb-6"> Schedule a call </a>
 
-        <p class="has-text-weight-semibold is-size-6">Or text me an email</p>
+        <p class="has-text-weight-semibold is-size-6" style="display: none">Or text me an email</p>
       </div>
-      <div class="cf-container">
+      <div class="cf-container" style="display: none">
         <div class="field">
           <label class="label">Name</label>
           <div class="control">

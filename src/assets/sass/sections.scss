@@ -65,3 +65,50 @@
     margin-right: 50px;
   }
 }
+
+.portfolios {
+  .portfolios__portfolio {
+    border: 1px solid $light-grey;
+    border-radius: 12px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+
+    .portfolios__portfolio--reverse {
+      @include mixins.tablet {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .portfolio__image-column {
+      display: flex;
+      align-items: center;
+
+      .portfolio__image {
+        display: block;
+      }
+    }
+
+    .portfolio__logo {
+      display: block;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.services {
+  .services__content {
+    .services__service {
+      .service__description {
+        ul {
+          list-style: disc;
+
+          li {
+            list-style-position: inside;
+          }
+        }
+      }
+    }
+  }
+}

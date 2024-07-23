@@ -10,9 +10,9 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/",
     "create-cname": "echo tomaskri.com > dist/CNAME",
-    "deploy": "vite build && npm run create-cname && gh-pages -d dist"
+    "deploy": "vite build && npm run create-cname && gh-pages -d dist",
+    "format": "prettier --write src/"
   },
   "dependencies": {
     "oh-vue-icons": "^1.0.0-rc3",
