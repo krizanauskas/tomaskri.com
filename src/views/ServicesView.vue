@@ -109,7 +109,7 @@
               </li>
             </ul>
             <p>
-              Feel free to reach out to talk over, how can help you achieve your business goals with
+              Feel free to reach out to me, to discuss, how i can help you to achieve your business goals with
               high-quality solutions!
             </p>
           </div>
