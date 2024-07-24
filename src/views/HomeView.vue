@@ -30,10 +30,10 @@
             </div>
 
             <div>
-              <a href="" class="m-1">
+              <a href="https://www.linkedin.com/in/tomaskri" target="_blank" class="m-1">
                 <v-icon scale="2" name="co-linkedin-in" />
               </a>
-              <a href="" class="m-1">
+              <a href="https://github.com/krizanauskas" target="_blank" class="m-1">
                 <v-icon scale="2" name="co-github" />
               </a>
             </div>
@@ -139,22 +139,22 @@
         </p>
         <div class="mb-4 is-size-5">
           <p class="has-text-weight-bold">tomaskrizanauskas@gmail.com</p>
-          <p class="has-text-weight-bold">+370 60266561</p>
+          <p class="has-text-weight-bold" href="tel:+37060266561">+370 60266561</p>
         </div>
 
         <p class="is-size-5 mb-3">You may also find me on these platforms</p>
 
         <div>
-          <a href="" class="m-1">
+          <a href="https://www.linkedin.com/in/tomaskri" target="_blank" class="m-1">
             <v-icon scale="2" name="co-linkedin-in" />
           </a>
-          <a href="" class="m-1">
+          <a href="https://github.com/krizanauskas" class="m-1">
             <v-icon scale="2" name="co-github" />
           </a>
         </div>
         <p class="is-size-6 mb-3">or</p>
 
-        <a class="button is-primary mb-6"> Schedule a call </a>
+        <a class="button is-primary mb-6 disabled"> Schedule a call </a>
 
         <p class="has-text-weight-semibold is-size-6" style="display: none">Or text me an email</p>
       </div>
